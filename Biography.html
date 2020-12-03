@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <style>
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+        
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("http://andreeabunget.co.uk/Img/footer.jpg");
+    background-size: cover;
+    
+}
+
+
+
+.first {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+}
+
+    .first h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+        .first h4::after {
+            content: '';
+            background: #66c83d;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+    .first p {
+        font-size: 14px;
+    }
+
+.second {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .second h4::after {
+        content: '';
+        background: #66c83d;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+
+.second li {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.second a, .second2 a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+    .second a:hover, .second2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+
+
+
+.third {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+
+    .third h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+
+        .third h4::after {
+            content: '';
+            background: #66c83d;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 80%;
+        }
+
+
+
+    .third li {
+        list-style: none;
+        padding-bottom: 15px;
+    }
+
+
+    .third a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+
+        .third a:hover {
+            color: #fff;
+            transition: 0.2s;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+
+
+@media screen and (max-width:1000px) {
+    .first {
+        text-align: center;
+    }
+
+        .first h4::after {
+            left: 40%;
+        }
+}
+
+@media screen and (max-width:1000px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+.line {
+    height:2px;
+    background-color:rgb(206,206,206);
+    width:100%;
+}
+
+.container h1{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    
+<!-- lsi arji gites inch anel, slideric araj mi hat siruni mej grenq Van Gogh ha davayy -->
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+
+    <a class="navbar-brand" href="index.html">Van Gogh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Biography.html">Biography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Paintings.html" tabindex="-1" aria-disabled="true">Paintings</a>
+        </li>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+   
+<!-- es headery -->
+
+
+
+<section class="wrapper">
+    <div class="container-fostrap">
+        <div>
+            <h1 class="heading">
+                Van Gogh Biography
+            </h1>
+       
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="https://en.wikipedia.org/wiki/Vincent_van_Gogh">
+                            <img src="https://assets.vangoghmuseum.nl/f9a7a187-484e-4821-b84a-79c836109029?w=1280&h=720&c=3ef7cbdddf65cd843793cfad294146ad48c92e428cfcf0d66cf8358b119266c3" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Introduction Van Gogh
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Vincent Willem van Gogh 30 March 1853 – 29 July 1890 was a Dutch post-impressionist painter 
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="Between November of 1881 and July of 1890, Vincent van Gogh painted almost 900 paintings. ">
+                            <img src="https://www.telegraph.co.uk/content/dam/news/2016/07/12/van_gogh_trans_NvBQzQNjv4Bq0Z2m9fTZlPCaE9lzDAtkDgiNMSpQgD3pEueusISl_Z4.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="Between November of 1881 and July of 1890, Vincent van Gogh painted almost 900 paintings. "> Paintings Van Gogh and not only
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Between November of 1881 and July of 1890, Vincent van Gogh painted almost 900 paintings...
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="Between November of 1881 and July of 1890, Vincent van Gogh painted almost 900 paintings. " class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/why-did-vincent-van-gogh-cut-off-his-ear">
+                            <img src="https://victor-mochere.com/wp-content/uploads/2019/05/Best-quotes-from-Vincent-van-Gogh.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/why-did-vincent-van-gogh-cut-off-his-ear">Why Van Gogh cutted his ear
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    tutorials button hover animation, although very much a hover button is very beauti...
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/why-did-vincent-van-gogh-cut-off-his-ear" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="first">
+                    <h4>Van Gogh Skills</h4>
+                  
+                    <p> Analytical Skills</p>
+                    <p> Problem-solving skills</p>
+                    <p> Critical-thinking skills</p>
+                    <p> Detail-oriented</p>
+                    <p> Multitasking</p>
+                    <p> Self-motivated</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="second">
+                    <h4> To Go </h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">BioGraphy</a></li>
+                        <li><a href="#">Paintings</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-xs-12">
+                <div class="third">
+                    <h4> Contact</h4>
+                    <ul>
+                        <li>vincent van gogh </li>
+                        <li></li>
+
+
+                      <li><i class="far fa-envelope"></i> vincentvangogh.co.uk</li>
+                        <li><i class="far fa-envelope"></i>vincentvangogh@gmail.com</li>
+
+
+                      <li><i class="fas fa-map-marker-alt"></i> Dutch </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="line"></div>
+                <div class="second2">
+                    <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-facebook fa-2x margin" ></i></i></a>
+                    <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-instagram fa-2x margin "></i></i></a>
+                    <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+</div> 
+
+
+
+
+
+</body>
+</html>
